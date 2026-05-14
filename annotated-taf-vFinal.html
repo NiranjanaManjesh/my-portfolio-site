@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotated TAF vFinal</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 24px; max-width: 900px; margin: auto; }
+        h1, h2 { color: #1a237e; }
+        pre { background: #f5f5f5; padding: 16px; border-radius: 8px; overflow-x: auto; }
+        .annotation { margin-bottom: 1rem; }
+        .term { font-weight: 700; color: #0d47a1; }
+        .note { color: #424242; }
+        .group { display: inline-block; margin: 4px 0; padding: 4px 8px; background: #e8eaf6; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>Annotated TAF vFinal</h1>
+    <p>This is the final annotated version of a standard Terminal Aerodrome Forecast (TAF). The example below shows the forecast groups and their meaning.</p>
+
+    <h2>Final TAF Example</h2>
+    <pre>TAF KJFK 121130Z 1212/1318 23012KT P6SM FEW020 SCT050
+TEMPO 1215/1218 4SM -SHRA BR BKN015 OVC030
+FM130000 20015G25KT P6SM SCT020 BKN040</pre>
+
+    <h2>Annotation Guide</h2>
+    <div class="annotation"><span class="term">TAF</span> — forecast type: Terminal Aerodrome Forecast.</div>
+    <div class="annotation"><span class="term">KJFK</span> — ICAO station identifier for John F. Kennedy International Airport.</div>
+    <div class="annotation"><span class="term">121130Z</span> — issuance time: 12th day at 1130 UTC.</div>
+    <div class="annotation"><span class="term">1212/1318</span> — valid period: from 12th 1200 UTC through 13th 1800 UTC.</div>
+    <div class="annotation"><span class="term">23012KT</span> — wind: 230 degrees at 12 knots.</div>
+    <div class="annotation"><span class="term">P6SM</span> — visibility: greater than 6 statute miles.</div>
+    <div class="annotation"><span class="term">FEW020 SCT050</span> — sky condition: few clouds at 2,000 feet, scattered clouds at 5,000 feet.</div>
+
+    <h2>Temporary Conditions</h2>
+    <div class="annotation"><span class="term">TEMPO 1215/1218</span> — temporary conditions expected from 121500 UTC to 121800 UTC.</div>
+    <div class="annotation"><span class="term">4SM</span> — temporary visibility 4 statute miles.</div>
+    <div class="annotation"><span class="term">-SHRA</span> — light rain showers.</div>
+    <div class="annotation"><span class="term">BR</span> — mist.</div>
+    <div class="annotation"><span class="term">BKN015 OVC030</span> — broken clouds at 1,500 feet, overcast at 3,000 feet.</div>
+
+    <h2>From-Time Change</h2>
+    <div class="annotation"><span class="term">FM130000</span> — new forecast begins at 130000 UTC.</div>
+    <div class="annotation"><span class="term">20015G25KT</span> — wind changes to 200 degrees at 15 knots gusting 25 knots.</div>
+    <div class="annotation"><span class="term">P6SM</span> — visibility remains greater than 6 statute miles.</div>
+    <div class="annotation"><span class="term">SCT020 BKN040</span> — sky condition: scattered clouds at 2,000 feet, broken clouds at 4,000 feet.</div>
+
+    <h2>How to Read This Final Version</h2>
+    <p>This annotated TAF includes the final forecast structure and highlights the standard groups used in TAF decoding. The order of groups in a typical TAF is:</p>
+    <ul>
+        <li>TAF header</li>
+        <li>station identifier</li>
+        <li>issuance time</li>
+        <li>valid period</li>
+        <li>winds, visibility, sky condition, and weather</li>
+        <li>any TEMPO, PROB, FM, or BECMG amendments</li>
+    </ul>
+</body>
+</html>
